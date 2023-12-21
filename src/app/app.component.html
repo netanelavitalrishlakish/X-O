@@ -1,0 +1,40 @@
+
+<div class="responsiv">
+<!--BH -->
+<h2>בס"ד</h2>
+<!-- all buttons -->
+<div class="board">
+<div class="row1">
+<button [ngClass]="{'red':arrStr[0]=='red','blue':arrStr[0]==='blue'}"   (click)="changeStatus(0)" class="button">{{this.xo[0]}}</button>
+<button [ngClass]="{'red':arrStr[1]=='red','blue':arrStr[1]==='blue'}"   (click)="changeStatus(1)" class="button">{{this.xo[1]}}</button>
+<button [ngClass]="{'red':arrStr[2]=='red','blue':arrStr[2]==='blue'}"   (click)="changeStatus(2)" class="button">{{this.xo[2]}}</button>
+</div>
+<br>
+<div class="row2">
+<button [ngClass]="{'red':arrStr[3]=='red','blue':arrStr[3]==='blue'}"   (click)="changeStatus(3)" class="button">{{this.xo[3]}}</button>
+<button [ngClass]="{'red':arrStr[4]=='red','blue':arrStr[4]==='blue'}"   (click)="changeStatus(4)" class="button">{{this.xo[4]}}</button>
+<button [ngClass]="{'red':arrStr[5]=='red','blue':arrStr[5]==='blue'}"   (click)="changeStatus(5)" class="button">{{this.xo[5]}}</button>
+</div>
+<br>
+<div class="row3">
+<button [ngClass]="{'red':arrStr[6]=='red','blue':arrStr[6]==='blue'}"   (click)="changeStatus(6)" class="button">{{this.xo[6]}}</button>
+<button [ngClass]="{'red':arrStr[7]=='red','blue':arrStr[7]==='blue'}"   (click)="changeStatus(7)" class="button">{{this.xo[7]}}</button>
+<button [ngClass]="{'red':arrStr[8]=='red','blue':arrStr[8]==='blue'}"   (click)="changeStatus(8)" class="button">{{this.xo[8]}}</button>
+</div>
+</div>
+
+<!-- display text who is winner -->
+<div  class="result">
+    {{this.computerWinner}}{{this.playerWinner}} 
+</div>
+<!-- display picture winner or lose -->
+<div class="container">
+    <img src={{this.imgRes}} >
+</div>
+<br>
+<br>
+<!-- credit -->
+<div class="netanel">
+    {{this.netanel}}
+</div>
+</div>
